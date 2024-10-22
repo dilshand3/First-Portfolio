@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Jersey 10", sans-serif;
+    background-color: #f5ddff;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8e44ad;
+    color: #fff;
+    z-index: 100;
+  }
+  
+  .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu-items {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-items li {
+    padding: 0 1rem;
+  
+  }
+  
+  .menu-items a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-items a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 142px;
+  }
+  
+  .left-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+  dif {
+    color: #8e44ad;
+  }
+  
+  .right-img {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .right-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .left-text h2 {
+    margin-left: 10px;
+  }
+  
+  
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slide-menu {
+    position: fixed;
+    top: 54px;
+    left: -100%;
+    width: 50%;
+    /* Sidebar width set to 50% */
+    height: 100%;
+    background-color: #8e44ad;
+    color: #fff;
+    z-index: 100;
+    padding: 1rem;
+    border-radius: px;
+    transition: all 0.4s ease-in-out;
+    /* Reduced transition time to 0.2s */
+  }
+  
+  .slide-menu a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .slide-menu a:hover {
+    background-color: #713693;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  #Contact {
+    width: 130px;
+    height: 40px;
+    background-color: #9a5cb4;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+  
+  #Contact:hover {
+    cursor: pointer;
+    background-color: #9a5cb4;
+    box-shadow: 3px 3px 15px purple;
+  }
+  
+  .bottom-line {
+    background-color: #8e44ad;
+    width: 100%;
+    margin-top: 50px;
+    height: 3.9px;
+  }
+  
+  .secondpage {
+    margin-top: 40px;
+  }
+  
+  .secondcontet {
+    text-align: center;
+    font-size: 1.3em;
+    color: #8e44ad;
+  }
+  
+  .skill1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  
+  .skill2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .skill2 img {
+    width: 20%;
+  }
+  
+  #css {
+    width: 12.5%;
+  }
+  
+  #js {
+    width: 12.5%;
+  }
+  
+  .circle h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    animation-name: circleborder;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 4px;
+  }
+  
+  @keyframes circleborder {
+    0% {
+      border: 15px solid #f5ddff;
+    }
+  
+    100% {
+      border: 15px solid #8e44ad;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .right-img {
+      margin-top: -40px;
+      margin-right: 0px;
+      border: 3px solid purple;
+    }
+  
+    .left-text h2 {
+      margin-top: 10px;
+      font-size: 1px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .menu-items {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .slide-menu.open {
+      left: 0;
+    }
+  
+    .menu-items a:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    #html,
+    #css,
+    #js {
+      margin-top: -43px;
+    }
+  }
+  
+  .project {
+    text-align: center;
+    text-transform: uppercase;
+  }
